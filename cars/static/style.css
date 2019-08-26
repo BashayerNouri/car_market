@@ -1,0 +1,220 @@
+
+
+#det-title{
+
+  font-size: 50px; 
+  text-align:center;
+
+}
+
+#det-text{
+
+font-size: 25px; 
+text-align:center;
+
+}
+
+#price {
+
+  color:red;
+}
+
+
+#destination {
+background-color: white;
+padding: 20px;
+border-width: 5px;
+border-style: solid;
+color: #49a09d;
+border-color: #49a09d;
+
+}
+
+
+.card-header {
+
+color: #536dfe;
+text-align: center;
+font-weight: bold;
+
+}
+
+
+
+
+a.navbar-brand, .nav-link {
+  color: white !important;
+  cursor: pointer;
+}
+
+
+a.navbar-brand:hover, .nav-link:hover {
+  color: red !important;
+}
+
+#box {
+background-color: white;
+border-color: #49a09d;
+padding-left: 20px;
+border-style: solid;
+border-width: 5px;
+}
+
+.navbar, .jumbotron {
+background: #0575E6;  
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  
+background: linear-gradient(to right, #021B79, #0575E6); 
+}
+
+.jumbotron{
+
+  font-weight: bold;
+  color: white;
+}
+
+#blue{
+  color: #49a09d;
+}
+
+img{
+  height:150px;
+  width:100%;
+}
+
+div [class^="col-"]{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 30px;
+}
+.container .thumbex {
+  margin: 10px 20px 30px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 435px;
+  height: 300px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  outline: 2px solid white;
+  outline-offset: -15px;
+  background-color: blue;
+  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+.container .thumbex .thumbnail {
+  overflow: hidden;
+  min-width: 250px;
+  height: 300px;
+  position: relative;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.container .thumbex .thumbnail span {
+  position: absolute;
+  z-index: 2;
+  top: calc(150px - 20px);
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 50px;
+  margin: 0 45px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease-out;
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover span {
+  opacity: 0;
+}
+
+
+#footer {
+
+padding-top: 100px;
+text-align: center;
+
+}
+
+#del-edit {
+
+padding-left: 115px;
+
+}
+  

@@ -5,6 +5,8 @@ class Car(models.Model):
 	make = models.CharField(max_length=120)
 	model = models.CharField(max_length=120)
 	year = models.IntegerField()
+	price = models.FloatField(null =True)
+	pretty_picture = models.ImageField(null =True)
 
 	def __str__(self):
 		return "{} {} - {}".format(self.make, self.model, self.year)
